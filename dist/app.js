@@ -85,6 +85,9 @@ const score = () => {
 resetBtn.addEventListener('click', function () {
     playerScore.innerHTML = 0;
     computerScore.innerHTML = 0;
+    yourPick.innerHTML = '';
+    housePick.innerHTML = '';
+    displayResult.innerHTML = 'PICK YOUR CHOICE';
     userScore = 0;
     houseScore = 0;
     playerScore.style.color = 'white';
