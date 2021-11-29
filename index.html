@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Roshambo || Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>ROSHAMBO</h1>
+        <div id="scoreboard">
+            <div id="your-score">
+                <h3>YOUR SCORE</h3>
+                <span class="score player-score">0</span>
+            </div>
+            <div id="house-score">
+                <h3>HOUSE SCORE</h3>
+                <span class="score computer-score">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="picks">
+            <div id="your-pick">
+                <h2>YOUR PICK</h2>
+                <div class="display-your-pick">
+
+                </div>
+            </div>
+            <div id="house-pick">
+                <h2>HOUSE PICK</h2>
+                <div class="display-house-pick">
+
+                </div>
+            </div>
+        </div>
+        <h2 id="result">PICK YOUR CHOICE</h2>
+        <div id="choices">
+            <div class="rock">
+                <button>
+                    <figure>
+                        <img src="dist/images/rock.svg" class="choice-btn" id="rock" alt="rock image">
+                    </figure>
+                </button>
+            </div>
+            <div class="paper">
+                <button>
+                    <figure>
+                        <img src="dist/images/paper.svg" class="choice-btn" id="paper" alt="paper image">
+                    </figure>
+                </button>
+            </div>
+            <div class="scissors">
+                <button>
+                    <figure>
+                        <img src="dist/images/scissors.svg" class="choice-btn" id="scissors" alt="scissors image">
+                    </figure>
+                </button>
+            </div>
+        </div>
+        <button id="reset">RESET</button>
+    </main>
+    <footer>
+        <div id="rules">
+            <button id="see-rules" class="foot-btn">RULES</button>
+            <p id="rules-info" class="hide">
+                In this game of Roshambo, the rules are simple:
+                <br>
+                1) Rock beats scissors.
+                <br>
+                2) Scissors beats paper.
+                <br>
+                3) Paper beats rock.
+                <br>
+                Now select a pick against the house and may the odds be ever in your favour 😉
+            </p>
+        </div>
+        <div id="history">
+            <button id="see-history" class="foot-btn"> <a
+                    href="https://en.wikipedia.org/wiki/Rock_paper_scissors#History"
+                    target="_blink">HISTORY</a></button>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="dist/app.js"></script>
+</body>
+
+</html>
