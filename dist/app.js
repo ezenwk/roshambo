@@ -42,19 +42,19 @@ const result = () => {
         case 'rockscissors':
         case 'scissorspaper':
         case 'paperrock':
-            gameResult = '🎉 YOU WON 🎉';
+            gameResult = '🎉 YOU WIN 🎉';
             break;
 
         case 'scissorsrock':
         case 'paperscissors':
         case 'rockpaper':
-            gameResult = '⛔ YOU LOST ⛔';
+            gameResult = '⛔ YOU LOSE ⛔';
             break;
 
         case 'scissorsscissors':
         case 'rockrock':
         case 'paperpaper':
-            gameResult = '🤝 DRAW 🤝';
+            gameResult = '🤝 TIE 🤝';
             break;
     }
 
@@ -62,11 +62,11 @@ const result = () => {
 }
 
 const score = () => {
-    if (gameResult === '🎉 YOU WON 🎉') {
+    if (gameResult === '🎉 YOU WIN 🎉') {
         playerScore.innerHTML = userScore += 1;
     }
 
-    if (gameResult === '⛔ YOU LOST ⛔') {
+    if (gameResult === '⛔ YOU LOSE ⛔') {
         computerScore.innerHTML = houseScore += 1;
     }
 
@@ -87,7 +87,7 @@ resetBtn.addEventListener('click', function () {
     computerScore.innerHTML = 0;
     yourPick.innerHTML = '';
     housePick.innerHTML = '';
-    displayResult.innerHTML = 'PICK YOUR CHOICE';
+    displayResult.innerHTML = 'SELECT A PICK';
     userScore = 0;
     houseScore = 0;
     playerScore.style.color = 'white';
